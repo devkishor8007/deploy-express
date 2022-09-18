@@ -9,9 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(helmet());
 
-app.get("/", (req, res) => {
-  res.send("deploy at digital ocean");
-});
+app.use("/", require("./router/todo.router"));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
