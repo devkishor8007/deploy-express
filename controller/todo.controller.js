@@ -1,9 +1,9 @@
-const winston = require("winston");
+const { logger } = require("../utils/logger");
 
 exports.getTodos = async (req, res) => {
   try {
     return res.send("deploy at digital ocean");
   } catch (e) {
-    winston.info(e.message);
+    logger.info(e.message);
   }
 };

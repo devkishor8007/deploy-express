@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const helmet = require("helmet");
-const winston = require("winston");
+const { logger } = require("./utils/logger");
 
 const app = express();
 
@@ -13,5 +13,5 @@ app.use("/", require("./router/todo.router"));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  winston.info(`server start at ${port}`);
+  logger.info(`server start at ${port}`);
 });
