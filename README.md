@@ -1,6 +1,9 @@
 # deploy-express
 under construction
 
+## configuration
+    - make a directory .env and copy the .env.example
+
 ## deploy on Digital Ocean(Ubuntu)
 - Step start after you create the projects on digital ocean then these step might be helpful.
 - Step 1: Set Up a Node.js Application on Digital Ocean
@@ -13,3 +16,4 @@ under construction
 - [Set Up a Node.js Application on Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-16-04)
 - [Install Nginx](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-22-04)
 - [Use PM2](https://www.digitalocean.com/community/tutorials/how-to-use-pm2-to-setup-a-node-js-production-environment-on-an-ubuntu-vps)
+- [Postgres](https://node-postgres.com/)
