@@ -2,12 +2,15 @@ require("dotenv").config();
 const express = require("express");
 const helmet = require("helmet");
 const { logger } = require("./utils/logger");
+const cors = require("cors");
+require("./config/db");
 
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(helmet());
+app.use(cors());
 
 app.use("/", require("./router/todo.router"));
 
